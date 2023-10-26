@@ -17,3 +17,4 @@ Create an algorithm using javascript that pulls required information from datase
 I was given code to write with zero explanation for their use and how the information would be pulled from it
 * I'm really struggling with this assignment and can't wrap my head around how to code to retrieve the information requested.
 * All code after Net Amount of Profit/Loss was provided by Tutor
+* I'll continue to play around with the code until I understand it

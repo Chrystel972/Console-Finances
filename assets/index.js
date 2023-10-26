@@ -120,16 +120,16 @@ console.log("Total: " + netProfitLoss);
 //   currentPL = 
 // }
 
-var averageChange;
-var amount;
+var averageChange=0;
+var amount=0;
 var date;
 var analysis;
 var currentMonth;
 var sumofAll = 0;
 var previousAmount;
-var increase;
-var decrease;
-var total;
+var increase = 0;
+var decrease = 0;
+var total=0;
 var calc = 0;
 
 for (var i=0; i<finances.length;i++){
@@ -141,18 +141,19 @@ for (var i=0; i<finances.length;i++){
     previousAmount = amount;
     sumofAll += calc;
 
-//  if (calc > increase[1]){
-//     increase = [date,calc];
-//   }
-//   if(calc<decrease[1]){
-//     decrease = [date,calc];
-//   }
+ if (calc > increase[1]){
+    increase = [date,calc];
+  }
+  if(calc<decrease[1]){
+    decrease = [date,calc];
+  }
 }
 averageChange = Math.round((sumofAll/(finances.length-1))*100)/100
 
 console.log("Average Change: " + averageChange);
-// console.log("Greatest Increase in Profits/Losses: "+ increase[0]+ " ($" + increase[1] + ")" )
-// console.log("Greatest Decrease in Profits/Losses: "+ decrease[0]+ " ($" + decrease[1] + ")" )
+
+console.log("Greatest Increase in Profits/Losses: "+ increase[0]+ " ($" + increase[1] + ")" )
+console.log("Greatest Decrease in Profits/Losses: "+ decrease[0]+ " ($" + decrease[1] + ")" )
 
 // // You will need to track what the total change in Profit/Losses are from month to month and then find the average.
 // (Total/(Number of months - 1))
