@@ -9,7 +9,7 @@ Create an algorithm using javascript that pulls required information from datase
 ## Steps Taken
 
 * Created repo in GitLab
-* Deployed site
+    * Deployed site
 * I pseudocoded what was required for the assignment in plain english
 * I used information from class to find the total months in the array and the total profit/loss net amount
 * After extensive research and trying to understand how to pull the data needed for the average changes
