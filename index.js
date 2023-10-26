@@ -120,41 +120,41 @@ console.log("Total: " + NetProfitLoss);
 //   currentPL = 
 // }
 
-// var averageChange;
-// var amount;
-// var date;
-// var analysis;
-// var currentMonth;
-// var sumofAll = 0;
-// var previousAmount;
-// var increase;
-// var decrease;
-// var total;
-// var calc = 0;
+var averageChange;
+var amount;
+var date;
+var analysis;
+var currentMonth;
+var sumofAll = 0;
+var previousAmount;
+var increase;
+var decrease;
+var total;
+var calc = 0;
 
-// for (var i=0; i<finances.length;i++){
-//   currentMonth = finances[i];
-//   date = currentMonth [0];
-//   amount = currentMonth[1];
-//   total += amount;
-//   if(i>0) calc=amount - previousAmount;
-//     previousAmount = amount;
-//     sumofAll += calc;
-  
-//   // if (calc > increase[1]){
-//   //   increase = [date,calc];
-//   // }
-//   // if(calc<decrease[1]){
-//   //   decrease = [date,calc];
-//   // }
-// }
-// averageChange = Math.round((sumofAll/(finances.length-1))*100)/100
+for (var i=0; i<finances.length;i++){
+  currentMonth = finances[i];
+  date = currentMonth [0];
+  amount = currentMonth[1];
+  total += amount;
+  if(i>0) calc=amount - previousAmount;
+    previousAmount = amount;
+    sumofAll += calc;
 
-// console.log("Average Change: " + averageChange);
+//  if (calc > increase[1]){
+//     increase = [date,calc];
+//   }
+//   if(calc<decrease[1]){
+//     decrease = [date,calc];
+//   }
+}
+averageChange = Math.round((sumofAll/(finances.length-1))*100)/100
+
+console.log("Average Change: " + averageChange);
 // console.log("Greatest Increase in Profits/Losses: "+ increase[0]+ " ($" + increase[1] + ")" )
 // console.log("Greatest Decrease in Profits/Losses: "+ decrease[0]+ " ($" + decrease[1] + ")" )
 
-// You will need to track what the total change in Profit/Losses are from month to month and then find the average.
+// // You will need to track what the total change in Profit/Losses are from month to month and then find the average.
 // (Total/(Number of months - 1))
 // The greatest increase in Profit/Losses (date and amount) over the entire period.
 
